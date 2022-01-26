@@ -1,0 +1,31 @@
+{
+  "name": "article",
+  "version": "1.0.0",
+  "description": "A simple express js api",
+  "main": "index.js",
+  "author": "NdkVin",
+  "license": "MIT",
+  "scripts": {
+    "start-prod": "N0DE_ENV=production node ./src/app.js",
+    "start-dev": "nodemon ./src/app.js",
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "joi": "^17.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "nanoid": "^3.2.0",
+    "node-pg-migrate": "^6.2.1",
+    "pg": "^8.7.1"
+  }
+}
